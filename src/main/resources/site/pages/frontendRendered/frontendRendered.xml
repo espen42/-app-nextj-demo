@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <page xmlns="urn:enonic:xp:model:1.0">
-  <display-name>Default</display-name>
-  <description>Single region template</description>
+  <display-name>Frontend rendered</display-name>
+  <description>View rendered by external frontend server</description>
   <form>
   </form>
   <regions>

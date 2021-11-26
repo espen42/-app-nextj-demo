@@ -5,10 +5,9 @@ exports.get = function (req) {
 
     log.info(`Default controller:\nUrl: ${req.path}\nmode: ${req.mode}`);
 
-    req.headers = {
-        ...(req.headers || {}),
-        [FROM_XP_PARAM]: "page"
-    }
+    req.headers = req.headers || {};
+    req.headers[FROM_XP_PARAM] = "page";
+
     return proxy.get(req);
 }
 
